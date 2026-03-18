@@ -12,15 +12,15 @@
       {
         "id": 1,
         "title": "Modelado de amenazas",
-        "diagramType": "STRIDE",
-        "placeholder": "Descripción de nuevo diagrama STRIDE",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "Genérico",
+        "placeholder": "Descripción de nuevo diagrama genérico",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
         "version": "2.6.0",
         "cells": [],
         "description": "Modelado de Amenazas"
       }
     ],
-    "diagramTop": 2,
+    "diagramTop": 3,
     "reviewer": "Carlos Lopez",
     "threatTop": 0
   }
