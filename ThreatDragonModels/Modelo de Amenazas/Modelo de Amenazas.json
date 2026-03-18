@@ -19,123 +19,6 @@
         "cells": [
           {
             "position": {
-              "x": 10,
-              "y": 30
-            },
-            "size": {
-              "width": 160,
-              "height": 80
-            },
-            "attrs": {
-              "text": {
-                "text": "Browser"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "zIndex": 7,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "a14d824f-d4be-4f41-91aa-5e47256ccd86"
-                },
-                {
-                  "group": "right",
-                  "id": "e508a4d1-e4e2-46f0-b136-e073d9f8f06a"
-                },
-                {
-                  "group": "bottom",
-                  "id": "b300e390-f80d-4c82-ab80-ea9848041a5f"
-                },
-                {
-                  "group": "left",
-                  "id": "b21da16d-0259-47a1-8c52-ef1121ccef63"
-                }
-              ]
-            },
-            "id": "b394f9f7-07ca-42bc-b616-ad77c6fbfcce",
-            "data": {
-              "name": "Browser",
-              "description": "",
-              "type": "tm.Actor",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false,
-              "providesAuthentication": false
-            }
-          },
-          {
-            "position": {
               "x": 1160,
               "y": -420
             },
@@ -155,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +122,6 @@
               ]
             },
             "id": "eb24d357-ea14-41d4-871c-4fe447797b06",
-            "zIndex": 8,
             "data": {
               "type": "tm.Actor",
               "name": "USER",
@@ -272,6 +155,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -355,7 +239,6 @@
               ]
             },
             "id": "07639cf9-38c4-41fc-847e-5b47c9783236",
-            "zIndex": 9,
             "data": {
               "type": "tm.Process",
               "name": "Web Browser",
@@ -771,6 +654,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -902,8 +786,7 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 11
+            }
           },
           {
             "position": {
@@ -926,6 +809,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1009,7 +893,6 @@
               ]
             },
             "id": "3741b434-2f08-4712-ad77-b4f7990c91a4",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Third Party Application",
@@ -1149,6 +1032,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1280,8 +1164,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 15
+            }
           },
           {
             "position": {
@@ -1304,6 +1187,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1435,8 +1319,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 1
               }
-            },
-            "zIndex": 16
+            }
           },
           {
             "shape": "flow",
@@ -1534,6 +1417,7 @@
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
+            "zIndex": 19,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
@@ -1556,8 +1440,7 @@
               "x": 2222,
               "y": 12
             },
-            "vertices": [],
-            "zIndex": 19
+            "vertices": []
           },
           {
             "position": {
@@ -1580,6 +1463,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 20,
             "ports": {
               "groups": {
                 "top": {
@@ -1698,8 +1582,7 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 20
+            }
           },
           {
             "position": {
@@ -1722,6 +1605,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 21,
             "ports": {
               "groups": {
                 "top": {
@@ -1840,8 +1724,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 21
+            }
           },
           {
             "shape": "flow",
@@ -1921,6 +1804,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 23,
             "ports": {
               "groups": {
                 "top": {
@@ -2004,7 +1888,6 @@
               ]
             },
             "id": "774da8a7-3aa6-4b10-9392-d5d5a242723d",
-            "zIndex": 23,
             "data": {
               "type": "tm.Store",
               "name": "RAW DATA",
@@ -2080,6 +1963,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 24,
             "ports": {
               "groups": {
                 "top": {
@@ -2197,8 +2081,7 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
-            },
-            "zIndex": 24
+            }
           }
         ],
         "version": "2.6.0",
