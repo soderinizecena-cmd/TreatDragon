@@ -265,8 +265,8 @@
                 "text": "Web Browser"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -363,12 +363,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e8786cea-4da3-4b6a-9fc4-fa9af9501682",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "- Extensiones vulnerables o maliciosas.",
+                  "mitigation": "- Restringir extensiones permitidas y mantener el navegador actualizado.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "0814ddf0-8dee-43f2-acd2-3c7585764d60",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Falta de protección contra XSS.",
+                  "mitigation": "Implementar Content Security Policy (CSP) y sanitización estricta de entradas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -667,96 +702,6 @@
             "target": {
               "cell": "774da8a7-3aa6-4b10-9392-d5d5a242723d",
               "port": "952bb0f0-16d6-4cb9-a6b7-794a60c3beb6"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
           },
           {
@@ -819,8 +764,8 @@
                 "text": "API gateway"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -916,12 +861,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "1c62d93a-669d-42b9-85d8-93a8dce8c791",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Falta de rate limiting.\n",
+                  "mitigation": "Implementar límites de solicitudes por IP/usuario y detección de anomalías.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "686a22fd-7f58-42d3-aa65-d9212d44a0e1",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Configuración incorrecta de CORS",
+                  "mitigation": "Configurar CORS para permitir solo orígenes explícitamente autorizados",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             },
             "zIndex": 11
           },
@@ -939,8 +919,8 @@
                 "text": "Third Party Application"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1037,9 +1017,40 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "4672de0e-7e7a-4cd5-bb7e-e48c8b39a4da",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Validación insuficiente de datos enviados al API",
+                  "mitigation": "Exposición de claves API en repositorios o código.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "320ffe9c-8e9a-44bc-ac7f-cda2dd4035a5",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Validación insuficiente de datos enviados al API",
+                  "mitigation": "Aplicar validación estricta de parámetros y esquemas (p. ej., JSON Schema).\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -1131,8 +1142,8 @@
                 "text": "Python Backend"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1228,12 +1239,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "375da5d3-8909-49b3-bfd5-bf87eaeed91e",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Dependencias desactualizadas con CVEs conocidos.\n",
+                  "mitigation": "Uso de herramientas como Dependabot, pip-audit y actualizaciones periódicas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "03364cac-b40a-4bde-a370-b6f5c2ffc34c",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Uso de herramientas como Dependabot, pip-audit y actualizaciones periódicas.",
+                  "mitigation": "Implementar mensajes de error genéricos y logs seguros sin información sensible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             },
             "zIndex": 15
           },
@@ -1251,8 +1297,8 @@
                 "text": "Data Processor"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1348,12 +1394,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "dcdec75f-89ae-4731-a53b-5739bd738bbd",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Falta de verificación de integridad de datos",
+                  "mitigation": "Uso de hashes, firmas digitales o checksums para validar integridad",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "13fe5d51-eec8-4097-8ec7-c18823c8a023",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Procesamiento sin aislamiento (sandboxing).",
+                  "mitigation": "Ejecutar el procesamiento en entornos aislados o contenedores con permisos mínimos\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             },
             "zIndex": 16
           },
@@ -1492,8 +1573,8 @@
                 "text": "SMTP Server"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1589,12 +1670,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "d6a328df-ceb7-448c-8374-cb8c56be1725",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Falta de límites de envío\n",
+                  "mitigation": "Establecer cuotas de envío, monitoreo y alertas ante patrones anómalos.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             },
             "zIndex": 20
           },
@@ -1612,8 +1715,8 @@
                 "text": "Emailer Process"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1709,12 +1812,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "8c15d66f-b850-43e8-b123-beda0134d670",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Configuración SMTP sin autenticación fuerte.\n",
+                  "mitigation": "Requerir autenticación segura (TLS, OAuth2, SMTP AUTH).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             },
             "zIndex": 21
           },
@@ -1784,11 +1909,13 @@
                 "text": "RAW DATA"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1885,13 +2012,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "f46063e1-26cd-45e8-9c5e-72f523c3ed02",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Almacenamiento sin cifrado.",
+                  "mitigation": "Cifrado en reposo (AES-256) y en tránsito (TLS).\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "114e44d4-c57b-4a54-8e89-b23279739743",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Controles de acceso débiles.",
+                  "mitigation": "Aplicar RBAC/ABAC, auditorías y principio de mínimo privilegio.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1908,11 +2068,13 @@
                 "text": "Process Scientific Data"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2008,13 +2170,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ae0d8d71-f7fc-4098-951a-0ee7451b0005",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Integridad no verificada",
+                  "mitigation": "Firmas digitales, hashing y controles de integridad en cada etapa",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "zIndex": 24
           }
@@ -2029,7 +2211,7 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 18
   },
   "version": "2.6.0"
 }
